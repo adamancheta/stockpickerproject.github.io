@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Stock Picker Project</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1 style="font-family: 'Courier New', Courier, monospace">Stock Analysis Project!</h1>
+</header>
+<section class="topnav">
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="static_visualizations.html">Static Visualizations</a>
+        <a href="interactive_visualizations.html">Interactive Visualizations</a>
+        <a href="conclusions.html">Conclusions</a>
+    
+        
+    </div>
+</section>
+
+  <!-- Altair Plot Section -->
+  <section class="profile">
+      <h2>Altair Plot Visualization</h2>
+      <img align ="middle" src="line_chart.jpeg" alt="Altair Plot" class="pic">
+      <section class ="description">
+        <p>This visualization shows the closing stock prices and the dates for each quarter within the years of 2019-2023. This altair plot allows us to see the fluctuations and determine which quarters are the best performing. From this data, perhaps we can analyze a good selling price and put in a sell order with a brokerage to make have some potential profit. It is also interesting to see how the prices of the top 10 most traded stocks had changed from the COVID-19 pandemic and if there were a recession compare this to the pandemic.  </p>
+        <p>From this plot we can determine that within the last year Nvidia has the highest closing price at aroudn $920. Additonally, every company dropped during the COVID-19 pandemic, however, most of the companies made a resurgance and started having an upward trajectory. While most of the companies had an upward trajectory, Intel was a company that remained stagnant from 2020-2024.</p>
+      </section>
+      
+      
+
+
+    <!-- Heat Map Section -->
+
+        <h2>Heat Map Visualization</h2>
+        <img align ="middle" src="heat_map.jpeg" alt="Heat Map" class="pic">
+
+        <div id="scatter-plot"></div>
+        
+        <section class="description1">
+            <p>This visualization demonstrates density, count, or percentage of people that own one of these stocks. Since these are the 10 most traded companies in the world, the density will be relatively high and is going to be above 0.4. This graph is a great represntation of what industry the stock purchased is in and which stocks are bought.</p>
+            <p>From this visualization, we can determine that tech stocks are amongst the most traded stocks. The two stocks that are the most traded are Nvidia, Apple, Google, and Microsoft. Due to the recent progressions in AI technology, these companies are growing and this will lead to more investors. </p>
+        </section>
+
+
+    <!-- Bar Chart Section -->
+
+        <h2>Bar Chart Visualization</h2>
+        <img align ="middle" src="bar_chart.jpeg" alt="Bar Chart" class="pic">
+        <section class="description2">
+            <p>This bar graph is a visualization that represents the average annaual return per year from each stock. This is a great piece of information as it allows us to see which companies have grown the most and which companies could continue to grow. Amongst the last 5 years, it is interesting to look at average annual returns for investors and how investors could capture some profits.</p>
+            <p>Straight off the bat, we can determine that Nvidia has had the most growth with annual returns of nearing 100%. The companies that are close to Nvidia are also in the technology sector and are breaching into AI. These companies are AMD at about 60%, META at about 40%, AAPL at about 35%, and others which have high average annual return rates. </p>
+        </section>
+        
+    </section>
+
+</body>
+</html>
