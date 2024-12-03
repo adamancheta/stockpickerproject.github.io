@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Stock Picker Project</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1 style="font-family: 'Courier New', Courier, monospace">Stock Analysis Project!</h1>
+</header>
+<section class="topnav">
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="static_visualizations.html">Static Visualizations</a>
+        <a href="interactive_visualizations.html">Interactive Visualizations</a>
+        <a href="conclusions.html">Conclusions</a>
+    
+        
+    </div>
+</section>
+
+  <!-- Line Chart Section -->
+  <section class="profile">
+      <h2>Line Chart: Stock Performance</h2>
+      <div id="line-chart"></div>
+      <label for="company-selector">Select a Company:</label>
+      <select id="company-selector"></select>
+      <section class="description">
+        <p> This visualization shows the closing stock prices and the dates for each quarter within the years of 2019-2023. This interactive plot allows us to see the fluctuations and changes with the stocks that you chose out of the 10 most traded stock. This graph allows us to determine which of the following years are the best performing from 2019-2024. This gives us a more broad perspective of the last 5 years and how prices have changed since then.</p>
+        <p>From this interactive plot it gives us a more general view of economic trends and what stocks consumers are trading. To look at a non-tech company, Nike, a well established sports brand, has increased from $80 closing price in 2019 to $100 in 2024.</p>
+      </section>
+      
+  </section>
+
+    <!-- Scatter Plot Section -->
+    <section class="profile">
+        <h2>Scatter Plot: Compare Metrics</h2>
+        <div id="scatter-plot"></div>
+        <label for="x-axis">X-Axis:</label>
+        <select id="x-axis">
+            <option value="high_mean">High (Mean)</option>
+            <option value="low_mean">Low (Mean)</option>
+            <option value="volume_mean">Volume (Mean)</option>
+            <option value="adj_close_mean">Adjusted Close (Mean)</option>
+        </select>
+        <label for="y-axis">Y-Axis:</label>
+        <select id="y-axis">
+            <option value="high_mean">High (Mean)</option>
+            <option value="low_mean">Low (Mean)</option>
+            <option value="volume_mean">Volume (Mean)</option>
+            <option value="adj_close_mean">Adjusted Close (Mean)</option>
+        </select>
+        <section class="description">
+          <p> This visualization shows the average of high closing prices, low closing prices, the trading volume, and the adjusted close through a drop down that changes the data in the axes. Adding the average amount of trading volume within a given year is intersting, because it allows us to see which stocks are most traded and compare this with the price of the stocks. This interactive plot allows us to see the coorelations between trading volume and changes for the 10 most traded stocks. This scatter plot allows us to have a more broad perspective of the last 5 years and include differrent variables that affect closing price.</p>
+          <p>Some of the key takeways from this visualizatios are that Apple has a higher trading volume than the other tech companies and through time this allows us to compare with investors making money. As for the adjusted close this was average close per year and this was intersting as it allows us to capture growth or loss of the stock depending on the year. </p>
+        </section>
+    </section>
+
+    <!-- Link JavaScript Files -->
+    <script src="line_chart.js"></script>
+    <script src="scatter_plot.js"></script>
+</body>
+</html>
