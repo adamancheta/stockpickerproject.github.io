@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="font-family: 'Courier New', Courier, monospace">Best Stock Picker Project</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1 style="font-family: 'Courier New', Courier, monospace">Stock Analysis Project!</h1>
+    </header>
+    <section class="topnav">
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="closing_price_overview.html">Closing Price Overview</a>
+            <a href="adjusted_closing_price_overview.html">Adjusted Closing Price Overview</a>
+            <a href="closing_price_comparitive_analysis.html">Closing Price Comparative Analysis</a>
+            <a href="conclusions.html">Conclusions</a>
+        </div>
+    </section>
+
+    <table style="width: 100%;">
+        <tr>
+            <td style="width: 50%; vertical-align: top;">
+                <!-- Altair Plot Section -->
+                <section class="profile">
+                    <h2 style="font-family: 'Courier New', Courier, monospace">Wide Scope of Closing Prices for Top 10 Most Traded Stocks (2019-2023)</h2>
+                    <img src="line_chart.jpeg" alt="Altair Plot" class="pic" style="max-width: 1200px; width: 100%; height: auto;">
+                    <section class="description">
+                        <p style="font-family: 'Times New Roman', Times, serif">This visualization shows the closing stock prices and the dates for each quarter within the years of 2019-2023. This Altair plot allows us to see the fluctuations and determine which quarters are the best performing. From this data, perhaps we can analyze a good selling price and put in a sell order with a brokerage to make have some potential profit. It is also interesting to see how the prices of the top 10 most traded stocks had changed from the COVID-19 pandemic and if there were a recession compare this to the pandemic.</p>
+                        <p style="font-family: 'Times New Roman', Times, serif">From this plot we can determine that within the last year Nvidia has the highest closing price at around $920. Additionally, every company dropped during the COVID-19 pandemic, however, most of the companies made a resurgence and started having an upward trajectory. While most of the companies had an upward trajectory, Intel was a company that remained stagnant from 2020-2024.</p>
+                    </section>
+                </section>
+            </td>
+            <td style="width: 50%; vertical-align: top;">
+                <!-- Line Chart Section -->
+                <section class="profile">
+                    <h2 style="font-family: 'Courier New', Courier, monospace">Historical Line Chart for an Individual Stock</h2>
+                    <div id="line-chart"></div>
+                    <label for="company-selector">Select a Company:</label>
+                    <select id="company-selector"></select>
+                    <div id="slider-container">
+                        <label for="time-slider">Filter by Date:</label>
+                        <input id="time-slider" type="range" min="2019" max="2024" step="1">
+                    </div>
+                    <section class="description">
+                        <p style="font-family: 'Times New Roman', Times, serif">This visualization shows the closing stock prices and the dates for each quarter within the years of 2019-2023. This interactive plot allows us to see the fluctuations and changes with the stocks that you chose out of the 10 most traded stock. This graph allows us to determine which of the following years are the best performing from 2019-2024. This gives us a more broad perspective of the last 5 years and how prices have changed since then.</p>
+                        <p style="font-family: 'Times New Roman', Times, serif">From this interactive plot it gives us a more general view of economic trends and what stocks consumers are trading. To look at a non-tech company, Nike, a well-established sports brand, has increased from $80 closing price in 2019 to $100 in 2024.</p>
+                    </section>
+                </section>
+            </td>
+        </tr>
+    </table>
+
+    <section class="References">
+        <h3 style="font-family: 'Courier New', Courier, monospace">References</h3>
+        <ul>
+            <li style="font-family: 'Times New Roman', Times, serif"><a href='https://finance.yahoo.com/markets/stocks/most-active/'>Yahoo Finance</a></li>
+            <li style="font-family: 'Times New Roman', Times, serif"><a href='https://www.tradingview.com/markets/stocks-usa/market-movers-active/'>Trading View</a></li>
+        </ul>
+    </section>
+</body>
+</html>
