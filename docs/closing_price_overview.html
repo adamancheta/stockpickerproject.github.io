@@ -11,48 +11,46 @@
 <body>
   <header>
     <h1 style="font-family: 'Courier New', Courier, monospace">Stock Analysis Project!</h1>
-</header>
-<section class="topnav">
-    <div class="topnav">
-        <a class="active" href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="closing_price_overview.html">Closing Price Overview</a>
-        <a href="adjusted_closing_price_overview.html">Adjusted Closing Price Overview </a>
-        <a href="closing_price_comparitive_analysis.html">Closing Price Comparitive Analysis</a>
-        <a href="conclusions.html">Conclusions</a>
-    
-        
-    </div>
-</section>
+  </header>
 
-    <section class="profile">
-      
-      
+  <nav class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="closing_price_overview.html">Closing Price Overview</a>
+    <a href="adjusted_closing_price_overview.html">Adjusted Closing Price Overview</a>
+    <a href="closing_price_comparitive_analysis.html">Closing Price Comparative Analysis</a>
+    <a href="conclusions.html">Conclusions</a>
+  </nav>
 
-
+  <section class="profile">
     <!-- Heat Map Section -->
+    <h2 style="font-family: 'Courier New', Courier, monospace">Amount Percentage of Shareholders for the 10 Most Traded Stocks</h2>
+    <img src="heat_map.jpeg" alt="Heat Map" class="pic" style="display: block; margin: 0 auto;">
 
-        <h2 style="font-family: 'Courier New', Courier, monospace"> Amount Percentage of Shareholders for That 10 Most Traded Stocks </h2>
-        <img align ="middle" src="heat_map.jpeg" alt="Heat Map" class="pic">
+    <div id="scatter-plot"></div>
 
-        <div id="scatter-plot"></div>
-        
-        <section class="description1">
-            <p style = "font-family: 'Times New Roman', Times, serif">This visualization demonstrates density, count, or percentage of people that own one of these stocks. Since these are the 10 most traded companies in the world, the density will be relatively high and is going to be above 0.4. This graph is a great represntation of what industry the stock purchased is in and which stocks are bought.</p>
-            <p style = "font-family: 'Times New Roman', Times, serif">From this visualization, we can determine that tech stocks are amongst the most traded stocks. The two stocks that are the most traded are Nvidia, Apple, Google, and Microsoft. Due to the recent progressions in AI technology, these companies are growing and this will lead to more investors. </p>
-        </section>
-
+    <div class="description">
+      <p style="font-family: 'Times New Roman', Times, serif;">
+        This visualization demonstrates density, count, or percentage of people that own one of these stocks. Since these are the 10 most traded companies in the world, the density will be relatively high and is going to be above 0.4. This graph is a great representation of what industry the stock purchased is in and which stocks are bought.
+      </p>
+      <p style="font-family: 'Times New Roman', Times, serif;">
+        From this visualization, we can determine that tech stocks are amongst the most traded stocks. The two stocks that are the most traded are Nvidia, Apple, Google, and Microsoft. Due to the recent progressions in AI technology, these companies are growing, which will lead to more investors.
+      </p>
+    </div>
 
     <!-- Bar Chart Section -->
+    <h2 style="font-family: 'Courier New', Courier, monospace">Annual Average Stock Returns</h2>
+    <img src="bar_chart.jpeg" alt="Bar Chart" class="pic" style="display: block; margin: 0 auto;">
 
-        <h2 style="font-family: 'Courier New', Courier, monospace">Annaual Avergae Stock Returns </h2>
-        <img align ="middle" src="bar_chart.jpeg" alt="Bar Chart" class="pic">
-        <section class="description2">
-            <p style = "font-family: 'Times New Roman', Times, serif">This bar graph is a visualization that represents the average annaual return per year from each stock. This is a great piece of information as it allows us to see which companies have grown the most and which companies could continue to grow. Amongst the last 5 years, it is interesting to look at average annual returns for investors and how investors could capture some profits.</p>
-            <p style = "font-family: 'Times New Roman', Times, serif">Straight off the bat, we can determine that Nvidia has had the most growth with annual returns of nearing 100%. The companies that are close to Nvidia are also in the technology sector and are breaching into AI. These companies are AMD at about 60%, META at about 40%, AAPL at about 35%, and others which have high average annual return rates. </p>
-        </section>
-        
-    </section>
+    <div class="description">
+      <p style="font-family: 'Times New Roman', Times, serif;">
+        This bar graph is a visualization that represents the average annual return per year from each stock. This is a great piece of information as it allows us to see which companies have grown the most and which companies could continue to grow. Amongst the last 5 years, it is interesting to look at average annual returns for investors and how investors could capture some profits.
+      </p>
+      <p style="font-family: 'Times New Roman', Times, serif;">
+        Straight off the bat, we can determine that Nvidia has had the most growth with annual returns nearing 100%. The companies that are close to Nvidia are also in the technology sector and are breaching into AI. These companies include AMD at about 60%, META at about 40%, AAPL at about 35%, and others which have high average annual return rates.
+      </p>
+    </div>
+  </section>
 
 </body>
 </html>
