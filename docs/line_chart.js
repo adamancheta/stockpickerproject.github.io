@@ -1,5 +1,5 @@
 // Line Chart Code
-const margin = { top: 20, right: 30, bottom: 30, left: 50 };
+const margin = { top: 50, right: 30, bottom: 60, left: 90 }; // Increased left margin to 90
 const width = 800 - margin.left - margin.right;
 const height = 400 - margin.top - margin.bottom;
 
@@ -27,6 +27,33 @@ d3.csv("line_chart_data.csv").then(data => {
 
   const xAxis = svg.append("g").attr("transform", `translate(0,${height})`);
   const yAxis = svg.append("g");
+
+  // X-Axis Label
+  svg.append("text")
+    .attr("class", "x-axis-label")
+    .attr("x", width / 2)
+    .attr("y", height + 50)
+    .attr("text-anchor", "middle")
+    .text("Date");
+
+  // Y-Axis Label
+  svg.append("text")
+    .attr("class", "y-axis-label")
+    .attr("x", -height / 2)
+    .attr("y", -70) // Adjusted further left to account for increased margin
+    .attr("text-anchor", "middle")
+    .attr("transform", "rotate(-90)")
+    .text("Adjusted Closing Price (USD)");
+
+  // Chart Title
+  svg.append("text")
+    .attr("class", "chart-title")
+    .attr("x", width / 2)
+    .attr("y", -20)
+    .attr("text-anchor", "middle")
+    .attr("font-size", "16px")
+    .attr("font-weight", "bold")
+    .text("Stock Price Trends");
 
   const line = d3.line()
     .x(d => x(d.Date))
